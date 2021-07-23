@@ -21,7 +21,7 @@ jobs:
   playwright:
 
     runs-on: ubuntu-latest
-    container: mcr.microsoft.com/playwright:focal
+    container: mcr.microsoft.com/playwright:v1.10.0-focal
 
     steps:
       - uses: actions/checkout@v2
