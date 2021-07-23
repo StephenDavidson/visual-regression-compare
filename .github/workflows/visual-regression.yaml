@@ -6,6 +6,7 @@ jobs:
   cypress:
 
     runs-on: ubuntu-latest
+    container: cypress/browsers
 
     steps:
       - uses: actions/checkout@v2
