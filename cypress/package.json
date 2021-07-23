@@ -1,0 +1,31 @@
+{
+  "name": "visual-regression-compare",
+  "version": "1.0.0",
+  "description": "Comparison of visual regression testing between tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run -b chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenDavidson/visual-regression-compare.git"
+  },
+  "keywords": [
+    "Visual",
+    "Regression",
+    "Test",
+    "Automation"
+  ],
+  "author": "Stephen Davidson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StephenDavidson/visual-regression-compare/issues"
+  },
+  "homepage": "https://github.com/StephenDavidson/visual-regression-compare#readme",
+  "devDependencies": {
+    "@types/node": "^16.4.1",
+    "cypress": "^8.0.0",
+    "cypress-image-snapshot": "^4.0.1",
+    "typescript": "^4.3.5"
+  }
+}

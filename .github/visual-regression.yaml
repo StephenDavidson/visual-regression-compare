@@ -1,0 +1,31 @@
+name: Visual Regression
+
+on: [push]
+
+jobs:
+  cypress:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '15.x'
+      - run: cd cypress
+      - run: npm ci
+      - run: npm test
+  playwright:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '15.x'
+      - run: cd playwright
+      - run: npm ci
+      - run: npm test
