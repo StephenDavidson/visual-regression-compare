@@ -1,6 +1,12 @@
 # visual-regression-compare
 
-# playwirght
+# playwright
+
+```
+cd playwright
+npm i
+npm test
+```
 
 update snapshots
 

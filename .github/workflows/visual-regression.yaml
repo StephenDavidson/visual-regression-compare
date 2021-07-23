@@ -21,6 +21,7 @@ jobs:
   playwright:
 
     runs-on: ubuntu-latest
+    container: mcr.microsoft.com/playwright:focal
 
     steps:
       - uses: actions/checkout@v2
@@ -29,8 +30,6 @@ jobs:
         with:
           node-version: '15.x'
       - run: npm ci
-        working-directory: ./playwright
-      - run: npx playwright install
         working-directory: ./playwright
       - run: npm test
         working-directory: ./playwright
