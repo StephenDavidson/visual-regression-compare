@@ -4,7 +4,7 @@
   "description": "Comparison of visual regression testing between tools",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run -b chrome"
+    "test": "npx cypress run -b chrome --headless"
   },
   "repository": {
     "type": "git",

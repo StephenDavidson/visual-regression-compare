@@ -9,9 +9,9 @@ const baseUrl = 'https://playwright.dev'
 describe('Visual Regression', () => {
   for (const path of urls) {
     it(`Visual regression - ${path}`, () => {
-      cy.viewport(1280, 1162);
       cy.visit(`${baseUrl}/${path}`)
-      cy.document().matchImageSnapshot();
+      cy.get('.navbar').invoke('css', 'position', 'absolute')
+      cy.document().matchImageSnapshot({capture: 'viewport'});
     })
   }
 })
