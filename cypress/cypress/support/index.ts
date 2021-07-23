@@ -20,7 +20,8 @@ import './commands'
 // require('./commands')
 import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
 addMatchImageSnapshotCommand({
-  failureThreshold: 0.90
+  failureThreshold: 0.90,
+  allowSizeMismatch: true
 });
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
