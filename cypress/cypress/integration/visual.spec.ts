@@ -1,7 +1,10 @@
 const urls = [
   'docs/core-concepts',
   'docs/intro',
-  'docs/debug'
+  'docs/debug',
+  'docs/cli',
+  'docs/languages',
+  'docs/release-notes'
 ]
 
 const baseUrl = 'https://playwright.dev'

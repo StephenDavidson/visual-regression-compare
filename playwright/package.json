@@ -4,7 +4,8 @@
   "description": "Comparison of visual regression testing between tools",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test"
+    "test": "npx playwright test",
+    "updateSnapshots": "npm test -- --update-snapshots"
   },
   "repository": {
     "type": "git",
